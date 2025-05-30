@@ -10,7 +10,7 @@
 
 
 body {
-    background-color: #75f9e734;
+    background-color: #3c3f3f77;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -32,10 +32,15 @@ body {
 .cabezal h1 {
     font-size: 30px;
     color: #913131;
+
 }
 
 h2 {
+    color: white;
     text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+
 }
 
 
@@ -72,9 +77,6 @@ div {
     border-radius: 8px;
 }
 
-.content h2 {
-    color: white;
-}
 
 
 .box {
@@ -89,22 +91,28 @@ div {
 }
 
 
+.box:hover { 
+    transform: scale(1.04); 
+}
+
 
 .content{
     width: 300px;
     padding: 20px;
     margin: 10px;
     background-color: #1b1818;
-    border: 5px solid #333;
+    border: 3px solid cyan;
     border-radius: 10px;
+    box-shadow: 0px 0px 15px cyan;
 }
 
 .visual-efects {
-    border: 1px solid rgb(250, 81, 109);
+    border: 3px solid #FF10F0,;
     padding-top: 20px;
     box-sizing: content-box;
     border-radius: 10px;
     background-color: #000;
+    box-shadow: 0px 0px 15px #FF10F0
 }
 
 
@@ -121,18 +129,20 @@ div {
     width: 100px;
     height: 100px;
     background-color: yellow;
-    transform: rotate(45deg);
     box-sizing: border-box;
     padding: 10px;
     border-radius: 6px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px #c2ff05,
+        0px 0px 15px green inset;
     margin: 40px;
     padding-top: 30px;
 }
 
-#enlace {
-    
+.rotate-box:hover {
+    transform: translateX(10px);
+    transform: rotate(45deg);
 }
+
 
 a:hover {
     color: white;
@@ -151,19 +161,31 @@ a:hover {
     text-align: center;
 }
 
+.interactivity {
+    margin: 20px;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    background-color: #1b1818;;
+    border: 3px solid #c2ff05 ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #c2ff05;
+}
+
 
 
 .fade-in {
     animation: fade 2s ease-in-out;
     width: 150px;
     height: 125px;
-    background-color: lightskyblue ;
+    background-color: rgb(7, 156, 248) ;
     box-sizing: border-box;
     border-radius: 80%;
     border-color: #3b94d4;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding-top: 50px;
+    padding-top: 50px;    
+    box-shadow: 0px 0px 15px #00ff2e,
+        0px 0px 15px #c2ff05 inset;
 }
 
 .fade-in:hover{
@@ -171,6 +193,7 @@ a:hover {
     color: white;
     font-weight: bold;
     font-size: 20px;
+    transform: scaleX(1.1); 
 }
 
 @keyframes fade {
