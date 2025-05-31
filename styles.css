@@ -51,7 +51,7 @@ h2 {
 
 
 div {
-    color: blue;
+    color: aquamarine;
 }
 
 .highlight {
@@ -63,7 +63,7 @@ div {
     box-shadow: 0px 0px 15px cyan,
         0px 0px 15px cyan inset;
     color: rgb(69, 150, 226);
-    background-color: rgb(99, 94, 94);
+    background-color: rgb(88, 30, 30);
     border-radius: 8px;
 }
 
@@ -124,6 +124,12 @@ div {
     padding: 10px;
 }
 
+#texto{
+    color: #000;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+}
+
 .rotate-box {
     
     width: 100px;
@@ -142,6 +148,7 @@ div {
     transform: translateX(10px);
     transform: rotate(45deg);
 }
+
 
 
 a:hover {
